@@ -1,4 +1,6 @@
+"use client"
 import React from 'react';
+import SetDemoButton from './Button';
 
 const ERPSection = () => {
   return (
@@ -25,9 +27,8 @@ const ERPSection = () => {
         </div>
 
         {/* Call to Action Button */}
-        <button className="mt-6 bg-yellow-500 text-white px-6 py-2 rounded-md hover:bg-yellow-600 transition duration-300">
-          Contact Us Today
-        </button>
+          
+        <SetDemoButton buttonText='Contact Us Today' />
       </div>
 
       {/* Image Section */}

@@ -1,4 +1,5 @@
 import React from 'react';
+import CustomLinkButton from './CustomLinkButton';
 
 const industries = [
   {
@@ -65,9 +66,7 @@ const ERPIndustries = () => {
           <img src={industry.image} alt={`${industry.name} Demo`} className="w-full h-48 object-cover rounded-md" />
           <h3 className="mt-4 text-xl font-bold text-gray-800">{industry.name}</h3>
           <p className="mt-2 text-gray-700">{industry.description}</p>
-          <button className="mt-4 bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">
-            Learn More
-          </button>
+         <CustomLinkButton linkText="Learn More" href="https://aitsind.com/industry/"  />
         </div>
       ))}
     </section>

@@ -7,13 +7,13 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-   <>
+   <div className="bg-white">
     <Hero />
-      <ERPSection />
-      <Features />
-      <ERPIndustries />
+    <ERPSection />
+    <Features />
+    <ERPIndustries />
  
-      <ContactSection />
-   </>
+    <ContactSection />
+   </div>
   );
 }

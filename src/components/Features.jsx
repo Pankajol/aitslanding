@@ -1,4 +1,5 @@
 import React from 'react';
+import SetDemoButton from './Button';
 
 const Features = () => {
   return (
@@ -22,13 +23,8 @@ const Features = () => {
           </p>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Looking for the best ERP software? AITS offers a solution that streamlines business processes and boosts productivity. Built to fit your organization's unique needs, no matter the size or industry.
-          </p>
-          <a
-            href="/schedule-demo"
-            className="inline-block bg-yellow-500 text-white px-10 py-4 rounded-md text-xl transition-transform transform hover:scale-105 hover:bg-yellow-600 duration-300"
-          >
-            SCHEDULE FREE DEMO
-          </a>
+          </p> 
+          <SetDemoButton buttonText='SCHEDULE FREE DEMO' />
         </div>
 
         {/* Image and Demo Div */}
