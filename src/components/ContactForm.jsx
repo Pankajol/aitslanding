@@ -116,7 +116,6 @@ const ContactForm = () => {
   });
 
   const [errors, setErrors] = useState({});
-  const accessKey = process.env.WEB3FORM_ACCESS_KEY;
 
 
   const validate = () => {
@@ -146,7 +145,8 @@ const ContactForm = () => {
     // Proceed with submission
     fetch('https://api.web3forms.com/submit', {
       method: 'POST',
-      body: JSON.stringify({ ...formData, access_key:accessKey }),
+      body: JSON.stringify({ ...formData, access_key:"c4b3f742-0cc5-4810-87c0-561a69b4c817"
+      }),
       headers: {
         'Content-Type': 'application/json',
       },
