@@ -116,7 +116,7 @@ const ContactForm = () => {
   });
 
   const [errors, setErrors] = useState({});
-  const accessKey = process.env.NEXT_PUBLIC_ACCESS_KEY;
+  const accessKey = process.env.WEB3FORM_ACCESS_KEY;
 
 
   const validate = () => {
